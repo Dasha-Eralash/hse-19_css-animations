@@ -1,0 +1,21 @@
+body{
+  padding: 40px;
+}
+.box{
+  width: 150px;
+  height: 150px;
+  background: red;
+  animation: change-color 12s ease
+  infinite;
+}
+@keyframes  change-color{
+0%{
+  background: red;
+ }
+50%{
+  background: black;
+ }
+100%{
+  background: red;
+ }
+}

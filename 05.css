@@ -1,0 +1,48 @@
+body{
+margin: 0;
+padding: 0;
+font-family: Vardana, sans-serif;
+font-weight: bold;
+background: black;
+color: red;
+font-size: 140px;
+}
+.box{
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+filter:  brightness(200%);
+}
+.text{
+ animation: shadow 4s ease
+infinite;
+}
+.text::before{
+position: absolute;
+content: "странные дела";
+filter: blur(20px);
+mix-blend-mode: difference;
+}
+.effect{
+background:  radial-gradient(circle, white,
+black 35%) centre/ 10% 10%;
+position: absolute;
+top: -100%;
+left: -100%;
+right: 0;
+bottom: 0;
+}
+@keyframes shadow {
+  50%{
+    text-shadow: 0 0
+    10px red;
+  }
+}
+@keyframes shine {
+  to{
+    transform: translate();
+  }
+}
